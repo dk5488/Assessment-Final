@@ -16,7 +16,7 @@ app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
-app.use('/bfhl', bfhlRoutes);
+app.use('/api/bfhl', bfhlRoutes);
 
 // Start server
 const PORT = process.env.PORT || 8000;
