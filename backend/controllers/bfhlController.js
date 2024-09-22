@@ -4,9 +4,9 @@ const { base64ToFile } = require('../utils/base64ToFile');
 
 const postBFHL = (req, res) => {
   const { data, file_b64 } = req.body;
-  const user_id = "atharv_mishra_25062003"; 
-  const email = "as9794@srmist.edu.in";
-  const roll_number = "RA2111003010621";
+  const user_id = "divy_pandey_25062003"; 
+  const email = "dk5488@srmist.edu.in";
+  const roll_number = "RA2111003011071";
   
   const numbers = [];
   const alphabets = [];
