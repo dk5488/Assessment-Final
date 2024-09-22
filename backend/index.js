@@ -5,7 +5,7 @@ const bfhlRoutes = require('./routes/bfhlRoutes');
 
 const app = express();
 
-const allowedOrigins = ['https://assessment-final-assessment-frontend.onrender.com'];
+const allowedOrigins = ['https://assessment-final-frontend123.onrender.com'];
 
 app.use(cors({
   origin: allowedOrigins,
