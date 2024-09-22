@@ -8,7 +8,7 @@ const app = express();
 const allowedOrigins = ['https://assessment-final-assessment-frontend.onrender.com'];
 
 app.use(cors({
-  origin: "*",
+  origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
