@@ -5,7 +5,13 @@ const bfhlRoutes = require('./routes/bfhlRoutes');
 
 const app = express();
 
-app.use(cors());
+const allowedOrigins = ['https://assessment-final-frontend123.onrender.com'];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
