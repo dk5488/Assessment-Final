@@ -15,7 +15,7 @@ const App = () => {
     setIsSubmitted(true);
     try {
       const jsonData = JSON.parse(jsonInput.trim()); // Trim whitespace
-      const res = await axios.post('http://localhost:8000/bfhl', jsonData);
+      const res = await axios.post('https://assessment-final-backend.onrender.com', jsonData);
       console.log(res); // Update to your backend URL
       setResponse(res.data);
       setSelectedOptions([]); // Clear previous selection after new submission
